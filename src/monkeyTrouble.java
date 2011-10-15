@@ -6,16 +6,16 @@
 public class monkeyTrouble {
 	
 	//Class for testing and setting dummy values
-	public static void main(String [] args) {
+	public static void main( String [] args ) {
 		boolean aSmile = true;
 		boolean bSmile = true;
 		
 		//Output tests
-		System.out.print(monkeyTrouble(aSmile,bSmile));
+		System.out.print( monkeyTrouble( aSmile, bSmile ) );
 	}
 	
-	public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-		  if( (aSmile && bSmile) || (!aSmile && !bSmile) ) {
+	public static boolean monkeyTrouble( boolean aSmile, boolean bSmile ) {
+		  if( ( aSmile && bSmile ) || ( !aSmile && !bSmile ) ) {
 			  return true;
 		  } else {
 			  return false;

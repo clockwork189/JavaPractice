@@ -8,16 +8,16 @@
 public class diff21 {
 	
 	//Class for testing and setting dummy values
-	public static void main(String [] args ) {	
+	public static void main( String [] args ) {	
 		int n = 23;
 		
 		//Output tests
-		System.out.println( diff21(n) );
+		System.out.println( diff21( n ) );
 	}
 	
-	public static int diff21(int n) {
-		int difference = 21-n;
-		int result = (difference < 0 ) ? (2*Math.abs(difference)) : Math.abs(difference);
+	public static int diff21( int n ) {
+		int difference = 21 - n;
+		int result = ( difference < 0 ) ? ( 2*Math.abs( difference ) ) : Math.abs( difference );
 		return result;
 	}
 }
