@@ -1,3 +1,9 @@
+/*
+ * Given a string, return a new string where the first and last chars have been exchanged. 
+ * frontBack("code") → "eodc"
+ * frontBack("a") → "a"
+ * frontBack("ab") → "ba"
+ */
 
 public class FrontBack {
 
@@ -8,12 +14,16 @@ public class FrontBack {
 	}
 		
 	public static String frontBack( String str ) {
-		char first = str.charAt( 0 );
-		char last = str.charAt( str.length() - 1 );
-		System.out.println( first + "  " + last );
-		String newstring = str.replace(str.charAt( 0 ), last );
-	//	newstring = newStrong.replace( str.charAt( str.length() -1 ), first );
-		return newstring;
+		if( str.length() < 1 ) {
+			return str;
+		}
+		else if( str.length() > 1 ) {
+			char first = str.charAt( 0 );
+			char last = str.charAt( str.length() - 1 );
+			return last + str.substring( 1, str.length()-1 ) + first;
+		} else {
+			return str;
+		}
 	}
 }
 
